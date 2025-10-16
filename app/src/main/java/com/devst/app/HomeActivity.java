@@ -27,7 +27,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import android.provider.Settings;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -106,8 +106,8 @@ public class HomeActivity extends AppCompatActivity {
             Intent email = new Intent(Intent.ACTION_SENDTO);
             email.setData(Uri.parse("mailto:")); // Solo apps de correo
             email.putExtra(Intent.EXTRA_EMAIL, new String[]{emailUsuario});
-            email.putExtra(Intent.EXTRA_SUBJECT, "Prueba desde la app");
-            email.putExtra(Intent.EXTRA_TEXT, "Hola, esto es un intento de correo.");
+            email.putExtra(Intent.EXTRA_SUBJECT, "Prueba Avance Androdid");
+            email.putExtra(Intent.EXTRA_TEXT, "Rodrigo paso por aqui... mhhhhhh....");
             startActivity(Intent.createChooser(email, "Enviar correo con:"));
         });
 
@@ -175,6 +175,27 @@ public class HomeActivity extends AppCompatActivity {
         Button btnLlamar = findViewById(R.id.btnLlamar);
         btnLlamar.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_DIAL);
+            startActivity(intent);
+        });
+
+
+        // 7- Creacion del evento para abrir el bluetooth
+        Button btnBluetooth = findViewById(R.id.btnBluetooth);
+        btnBluetooth.setOnClickListener(v -> {
+            Intent intent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            } else {
+                Toast.makeText(this, "No se puede abrir la configuración de Bluetooth", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // 8- Creacion del metodo para mandar un sms predetermiand.....
+        Button btnSms = findViewById(R.id.btnSms);
+        btnSms.setOnClickListener(v -> {
+            Uri smsUri = Uri.parse("smsto:+56912345678"); // número de ejemplo
+            Intent intent = new Intent(Intent.ACTION_SENDTO, smsUri);
+            intent.putExtra("sms_body", "Hola, Rodrigo estuvo aqui... mheeee...");
             startActivity(intent);
         });
 

@@ -72,28 +72,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Abrir Mapa"/>
+                    android:text="1- Abrir Mapa"/>
 
                 <Button
                     android:id="@+id/btnLlamar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Abrir Marcador Telefónico"/>
+                    android:text="3- Abrir Marcador Telefónico"/>
 
                 <Button
                     android:id="@+id/btnAbrirWeb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Abrir sitio web"/>
+                    android:text="2- Abrir sitio web"/>
 
                 <Button
                     android:id="@+id/btnEnviarCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Enviar correo"/>
+                    android:text="4- Enviar correo"/>
 
                 <Button
                     android:id="@+id/btnCompartir"
@@ -115,6 +115,22 @@
                     android:layout_height="wrap_content"
                     android:text="Abrir Cámara"
                     android:layout_marginTop="12dp"/>
+
+                <Button
+                    android:id="@+id/btnBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text=" 5- Abrir configuración Bluetooth"/>
+
+                <Button
+                    android:id="@+id/btnSms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="6- Enviar SMS"/>
+
+
 
             </LinearLayout>
         </LinearLayout>
