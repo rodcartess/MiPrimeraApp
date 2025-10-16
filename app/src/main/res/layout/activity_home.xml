@@ -131,6 +131,28 @@
                     android:text="6- Enviar SMS"/>
 
 
+                <!-- botones de ayuda -->
+                <Button
+                    android:id="@+id/btnAyuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abrir Ayuda"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/btnConfig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abrir Configuración"
+                    android:layout_marginTop="12dp" />
+
+                <Button
+                    android:id="@+id/btnDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Detalle"
+                    android:layout_marginTop="12dp" />
+
 
             </LinearLayout>
         </LinearLayout>

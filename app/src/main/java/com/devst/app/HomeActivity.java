@@ -200,6 +200,30 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
+
+        // Configuracion de los botones explicitos
+        findViewById(R.id.btnAyuda).setOnClickListener(v ->
+                startActivity(new Intent(this, AyudaActivity.class))
+        );
+
+
+        findViewById(R.id.btnConfig).setOnClickListener(v ->
+                startActivity(new Intent(this, ConfigActivity.class))
+        );
+
+
+        Button btnDetalle = findViewById(R.id.btnDetalle);
+        btnDetalle.setOnClickListener(v -> {
+            Intent i = new Intent(this, DetalleActivity.class);
+            // 👉 Dato de ejemplo que describes: qué hace un botón de tu app
+            i.putExtra("titulo", "Botón Cámara");
+            i.putExtra("descripcion", "Este botón abre la cámara del teléfono para tomar una foto y guardarla en la galería.");
+            startActivity(i);
+        });
+
+
+
+
     }
 
 

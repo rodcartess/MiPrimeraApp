@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:text="¿Cómo uso la cámara?"
+            android:textStyle="bold" android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Toca el botón 'Abrir Cámara' y toma la foto. La imagen se guarda en la galería."
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent" android:layout_height="12dp"/>
+
+        <TextView
+            android:text="¿Cómo abrir Aulas Virtuales?"
+            android:textStyle="bold" android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Desde la pantalla principal, presiona 'Ir a Aulas Virtuales' para abrir el navegador."
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
+
