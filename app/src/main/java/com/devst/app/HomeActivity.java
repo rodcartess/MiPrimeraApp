@@ -94,10 +94,11 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // Evento: Intent implícito → abrir web
+        // 2- Se mejoro el acceso directo al portal de la santo tomas...
         btnAbrirWeb.setOnClickListener(v -> {
-            Uri uri = Uri.parse("https://www.santotomas.cl");
-            Intent viewWeb = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(viewWeb);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://experience.elluciancloud.com/ustc/"));
+            startActivity(intent);
         });
 
         // Evento: Intent implícito → enviar correo
