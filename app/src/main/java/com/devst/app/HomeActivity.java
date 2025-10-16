@@ -171,6 +171,14 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        // 3- Creacion del funcionamiento del btnLlamar
+        Button btnLlamar = findViewById(R.id.btnLlamar);
+        btnLlamar.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            startActivity(intent);
+        });
+
+
     }
 
 
